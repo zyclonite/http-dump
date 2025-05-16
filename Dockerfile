@@ -9,7 +9,7 @@ RUN cd src \
 FROM scratch
 
 LABEL org.opencontainers.image.title="http-dump" \
-      org.opencontainers.image.version="0.0.4" \
+      org.opencontainers.image.version="0.0.5" \
       org.opencontainers.image.description="Dump Raw Http Requests" \
       org.opencontainers.image.licenses="Apache-2.0" \
       org.opencontainers.image.source="https://github.com/zyclonite/http-dump"
