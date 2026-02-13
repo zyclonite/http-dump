@@ -1,4 +1,4 @@
-FROM golang:1.25-alpine as builder
+FROM golang:1.26-alpine as builder
 
 COPY . /go/src
 
@@ -9,7 +9,7 @@ RUN cd src \
 FROM scratch
 
 LABEL org.opencontainers.image.title="http-dump" \
-      org.opencontainers.image.version="0.0.6" \
+      org.opencontainers.image.version="0.0.7" \
       org.opencontainers.image.description="Dump Raw Http Requests" \
       org.opencontainers.image.licenses="Apache-2.0" \
       org.opencontainers.image.source="https://github.com/zyclonite/http-dump"
